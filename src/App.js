@@ -1,22 +1,20 @@
 // import logo from './logo.svg';
 // import './App.css';
-
-import Navbar from "./components/Navbar";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import Portfolio from "./pages/Portfolio";
+import Navigation from "./components/Navbar";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <div>
-      {/* <Navbar></Navbar> */}
-      <Router>
-        <Routes>
-          <Route exact path= "/portfolio" >
-            <Portfolio/>
-            </Route>
-        </Routes>
-      </Router>
-    </div>
+    <main className="text-gray-400 bg-gray-900 body-font">
+      <Navigation />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+    </main>
   );
 }
 

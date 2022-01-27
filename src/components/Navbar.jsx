@@ -1,31 +1,20 @@
-const Navbar = props => {
+import React from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+
+const Navigation = props => {
   console.log(props)
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href=""></Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="./Home">Home</Nav.Link>
+          <Nav.Link href="./Portfolio">Portfolio</Nav.Link>
+          <Nav.Link href="./Contact">Contact</Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
   )
 }
 
-export default Navbar
+export default Navigation
