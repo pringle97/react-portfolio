@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import Navigation from "./components/Navbar";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -8,7 +8,7 @@ import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="bg text-gray-400 bg-gray-900 body-font">
       <Navigation />
       <About />
       <Projects />
